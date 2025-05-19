@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trắc nghiệm Ma trận</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.9.0/math.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.0.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 p-5">
+
+    <!-- Form đăng nhập -->
+    <div id="loginSection" class="max-w-md mx-auto bg-white p-5 shadow">
+        <h2 class="text-xl font-bold mb-4">Thông tin sinh viên</h2>
+        <input id="name" type="text" placeholder="Họ tên" class="border p-2 w-full mb-2">
+        <input id="studentId" type="text" placeholder="Mã số sinh viên" class="border p-2 w-full mb-2">
+        <button onclick="startTest()" class="bg-blue-500 text-white px-4 py-2">Bắt đầu làm bài</button>
+    </div>
+
+    <!-- Đề thi -->
+    <div id="quizSection" class="hidden">
+        <h2 class="text-xl font-bold mb-4">Trắc nghiệm Ma trận</h2>
+        <div id="quizContainer"></div>
+        <button onclick="submitTest()" class="bg-green-500 text-white px-4 py-2 mt-4">Nộp bài</button>
+    </div>
+
+    <!-- Kết quả -->
+    <div id="resultSection" class="hidden">
+        <h2 class="text-xl font-bold mb-4">Kết quả & Chỉnh sửa câu sai</h2>
+        <div id="resultContainer"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
